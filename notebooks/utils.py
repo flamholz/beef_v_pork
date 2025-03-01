@@ -17,6 +17,6 @@ METATHERIAN_ORDERS = [
 def nan_gmean(a):
     """Geometric mean of pd.Series that handles NaNs."""
     if not a.any():
-        return np.NaN
+        return np.nan
     my_a = a[a.notnull()]
     return gmean(a[a.notnull()])
